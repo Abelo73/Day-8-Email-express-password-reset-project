@@ -5,6 +5,7 @@ import OtpForm from "./components/OtpForm";
 import PasswordReset from "./components/PasswordReset";
 import Register from "./components/Register";
 import Home from "./components/Home";
+import ChangePasswordForm from "./components/ChangePasswordForm";
 
 function App() {
   return (
@@ -13,10 +14,11 @@ function App() {
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/password-reset" element={<PasswordReset />} />
+          <Route path="/reset-password" element={<PasswordReset />} />
           <Route path="/otp-form" element={<OtpForm />} />
           <Route path="/" element={<Login />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/change-password" element={<ChangePasswordForm />} />
         </Routes>
       </div>
     </Router>
